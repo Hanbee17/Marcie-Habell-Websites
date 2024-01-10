@@ -35,13 +35,13 @@ a {
 
 /*Nav Bar*/
 .topbar {
-  background-color: #232c33;
+  background-color: #738F32;
   position: relative;
   display: flex;
 }
 
 .topnav {
-  background-color: #232c33;
+  background-color: #738F32;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -66,8 +66,16 @@ a {
 
 .topnav div {
   width: 75px;
-  padding: 15px 10px;
+  padding: 65px 30px;
 }
+
+/*Logo Content*/
+.topnav .logo {
+  position: relative;
+  align-items: left;
+  justify-content: flex-start;
+}
+
 
 /*Gallery Dropdown*/
 
@@ -127,7 +135,6 @@ a {
 
 .hero img {
   height: auto;
-  opacity: .65;
 }
 
 .hero p {
@@ -139,6 +146,7 @@ a {
 .hero a {
   color: #232c33;
 }
+
 
 /*Main Content*/
 .content {
@@ -215,6 +223,7 @@ flex: 50%;
   flex: 40%;
   padding-left: 20px;
   justify-content: flex-start;
+  color: #738F32;
 }
 
 /*Footer*/

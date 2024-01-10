@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This site is a multi-page website template created by Chelsea Thompto." />
+    <title>Marcie Habell, M.A., ET/P - Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+      <div class="topnav">
+  
+      <a class="logo" href="../"><img src="../img/site-logo.png"/></a>
+
+      <div><a href="../">Home</a></div>
+      <div><a class="active" href="./payments/">Payments</a></div>
+      <div id="gallery">
+        <a href="../gallery/">Resources</a>
+        <div id="gal-list">
+          <a href="../gallery/project1/">Project 1</a>
+          <a href="../gallery/project2/">Project 2</a>
+          <a href="../gallery/project3/">Project 3</a>
+        </div>
+      </div>
+      <div><a href="../bio/">Contacts</a></div>
+    </div>
+    
+    <!--Splash Image Section-->
+    <div class="hero">
+      <img
+        src="../img/S-1_big_bg.jpg"
+        width="100%"
+        alt="image."
+      />
+      <div class="hero-overlay">
+      </div>
+    </div>
+    <!--Main Content-->
+    <div class="content">
+      <div>
+        <h2>
+            Make a Payment
+                </h2>
+       
+        <p>
+            Please use the form below to pay securely through PayPal. All major credit cards as well as electronic check and bank wire are accepted.
+        </p>
+        <p>
+            If you have any questions, comments, or concerns, please visit the contact page.
+        </p>
+        </div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" type="hidden" value="_xclick" /> <input name="business" type="hidden" value="marcie@individualedsupport.com" /> <input name="item_name" type="hidden" value="Website Payment" /> <input name="no_shipping" type="hidden" value="1" /> <input name="no_note" type="hidden" value="0" /> <input name="currency_code" type="hidden" value="USD" />
+            <table class="payment-form">
+                <tbody>
+                    <tr>
+                    <td class="form-label"><label>Student Name</label></td>
+                    <td class="form-input"><input name="item_number" type="text" /></td>
+                    </tr>
+                    <tr>
+                    <td class="form-label"><label>Payment Amount</label></td>
+                    <td class="form-input"><input name="amount" type="text" value="0.00" /></td>
+                    </tr>
+                            <tr>
+                            <td class="form-label"></td>
+                            <td class="form-input"><input name="bn" value="GetNetSet_SP" type="hidden" /></td>
+                            </tr>
+                    <tr>
+                    <td class="form-label"></td>
+                    <td class="form-input"><input name="submit" type="submit" value="Make a Payment" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+<div><img class="aligncenter" src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" alt="Paypal" /></div>
+
+    </div>
+    <!--Footer Section-->
+    <footer class="footer">
+      <p>
+        © 2015 Marcie Habell. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
