@@ -1,47 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   margin: 0;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAElJREFUKFNjZCASMILU/fr16z+IZmNjA/NhAFkcrhBdEbJikByKCTDTQRIg05A1Y1iFy2QME9GthPGxmohuLUgxaZ4hOniICXMA/6U4CzEdf54AAAAASUVORK5CYII=
-  ) repeat;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  color: #232c33;
+  color: #61714d;
   font-size: xxx-large;
 }
 
 h2 {
-  color: #232c33;
+  color: #61714d;
   font-size: xx-large;
 }
 
 h3 {
-  color: #0050c1;
+  color: #61714d;
   font-size: x-large;
+  margin-top: 0;
 }
 
 h4 {
-  color: #232c33;
+  color: #61714d;
   font-size: large;
 }
+
 
 p {
   color: #232c33;
 }
 
 a {
-  color: #0050c1;
+  color: #61714d;
 }
 
 /*Nav Bar*/
 .topbar {
-  background-color: #738F32;
+  background-color: #8fae93;
   position: relative;
   display: flex;
 }
 
 .topnav {
-  background-color: #738F32;
+  background-color: #8fae93;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -56,7 +61,7 @@ a {
 
 .topnav a:hover {
   background-color: #f3f5f7;
-  color: #232c33;
+  color: #61714d;
   border: 1px solid #f3f5f7;
 }
 
@@ -90,7 +95,7 @@ a {
 }
 
 #gal-list a {
-  color: #232c33;
+  color: #61714d;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -108,7 +113,7 @@ a {
 
 #gallery:hover a {
   background-color: #f3f5f7;
-  color: #232c33;
+  color: #61714d;
   border: 1px solid #f3f5f7;
 }
 
@@ -140,11 +145,11 @@ a {
 .hero p {
   margin-left: 20px;
   margin-top: 0px;
-  color: #0050c1;
+  color: #61714d;
 }
 
 .hero a {
-  color: #232c33;
+  color: #61714d;
 }
 
 
@@ -160,11 +165,11 @@ a {
 }
 
 .content a {
-  color: #232c33;
+  color: #61714d;
 }
 
 .content button {
-  background-color: #232c33;
+  background-color: #61714d;
   color: #f3f5f7;
   font-size: large;
   padding: 20px;
@@ -213,7 +218,7 @@ flex: 50%;
 
 .bio-left img {
   display: block;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   padding: 0px;
   border: none;
@@ -221,15 +226,14 @@ flex: 50%;
 
 .bio-right {
   flex: 40%;
-  padding-left: 20px;
+  padding-left: 40px;
   justify-content: flex-start;
-  color: #738F32;
 }
 
 /*Footer*/
 .footer {
   display: block;
-  background-color: #232c33;
+  background-color: #8fae93;
   text-align: right;
   padding: 5px;
 }
