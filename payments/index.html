@@ -10,24 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
-    <!--Navigation Bar-->
-      <div class="topnav">
-  
-      <!-- <a class="logo" href="../"><img src="../img/site-logo.png"/></a> -->
 
-      <div><a href="../">Home</a></div>
-      <div><a class="active" href="./payments/">Payments</a></div>
-      <div id="gallery">
-        <a href="../gallery/">Resources</a>
-        <div id="gal-list">
-          <!-- <a href="../gallery/project1/">Project 1</a> -->
-          <a href="../gallery/project2/">Books</a>
-          <a href="../gallery/project3/">Websites</a>
-        </div>
+  <body>
+
+        <!--Navigation Bar-->
+    <!-- <img src="./img/site-logo.png"/> -->
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="../">Marcie Habell</a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a class="active" href="../">Home</a></li>
+          <li><a href="./">Payments</a></li>
+          <li>
+            <a href="../gallery/" class="desktop-item">Resources</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Resources</label>
+            <ul class="drop-menu">
+              <li><a href="../gallery/project2/">Books</a></li>
+              <li><a href="../gallery/project3/">websites</a></li>
+              <li><a href="#">Drop menu 3</a></li>
+              <li><a href="#">Drop menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href="../bio/">About</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
-      <div><a href="../bio/">About</a></div>
-    </div>
+    </nav>
     
     <!--Splash Image Section-->
     <div class="hero">

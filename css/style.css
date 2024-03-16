@@ -80,19 +80,20 @@ a {
   justify-content: flex-start;
 }
 
+/* Nar Bar Main =================================== */
 
 nav{
   position: fixed;
   z-index: 99;
   width: 100%;
   
-  background: #242526;
+  background: #8fae93;
 }
 nav .wrapper{
   position: relative;
   max-width: 1300px;
   padding: 0px 30px;
-  height: 70px;
+  height: 100px;
   line-height: 70px;
   margin: auto;
   display: flex;
@@ -121,14 +122,14 @@ nav .wrapper{
   transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-  background: #3A3B3C;
+  background: #61714d;
 }
 .nav-links .mobile-item{
   display: none;
 }
 .nav-links .drop-menu{
   position: absolute;
-  background: #242526;
+  background: #8fae93;
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -136,8 +137,7 @@ nav .wrapper{
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
-.nav-links li:hover .drop-menu,
-.nav-links li:hover .mega-box{
+.nav-links li:hover .drop-menu{
   transition: all 0.3s ease;
   top: 70px;
   opacity: 1;
@@ -150,27 +150,7 @@ nav .wrapper{
   font-weight: 400;
   border-radius: 0px;
 }
-.mega-box{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 30px;
-  top: 85px;
-  opacity: 0;
-  visibility: hidden;
-}
-.mega-box .content{
-  background: #242526;
-  padding: 25px 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-.mega-box .content .row{
-  width: calc(25% - 30px);
-  line-height: 45px;
-}
+
 .content .row img{
   width: 100%;
   height: 100%;
@@ -221,7 +201,7 @@ nav .wrapper{
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: #242526;
+    background: #8fae93;
     display: block;
     padding: 50px 10px;
     line-height: 50px;
@@ -234,10 +214,10 @@ nav .wrapper{
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: #8fae93;
   }
   ::-webkit-scrollbar-thumb {
-    background: #3A3B3C;
+    background: #61714d;
   }
   #menu-btn:checked ~ .nav-links{
     left: 0%;
@@ -286,7 +266,7 @@ nav .wrapper{
     transition: all 0.3s ease;
   }
   .nav-links .mobile-item:hover{
-    background: #3A3B3C;
+    background: #61714d;
   }
   .drop-menu li{
     margin: 0;
@@ -348,45 +328,6 @@ nav input{
   font-weight: 600;
 }
 
-
-/*Gallery Dropdown*/
-
-#gal-list {
-  display: none;
-  position: absolute;
-  min-width: 125px;
-  z-index: 1;
-  background-color: #f3f5f7;
-}
-
-#gal-list a {
-  position: absolute;
-  color: #61714d;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-#gal-list a:hover{
-  font-weight: bold;
-}
-
-#gallery {
-  position: relative;
-}
-
-#gallery:hover #gal-list{display:block;}
-
-#gal-list:hover {
-  display: block;
-}
-
-#gallery:hover a {
-  background-color: #f3f5f7;
-  color: #61714d;
-  border: 1px solid #f3f5f7;
-}
-
 /*Hero Content*/
 
 .hero {
@@ -398,7 +339,7 @@ nav input{
 .hero-overlay {
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: 0px;q
   width: 90%;
   text-align: left;
   margin-left: 50px;
@@ -474,6 +415,48 @@ nav input{
   margin: auto;
   width: 100%;
 }
+
+
+/* Resources Lists ================== */
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
 
 /*Bio Flexbox*/
 

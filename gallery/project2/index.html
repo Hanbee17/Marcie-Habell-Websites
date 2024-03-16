@@ -14,38 +14,61 @@
     <link rel="stylesheet" href="../../css/style.css" />
   </head>
   <body>
-   
-      <!--Navigation Bar-->
-      <div class="topnav">
-  
-        <!-- <a class="logo" href="./"><img src="./img/site-logo.png"/></a> -->
-  
-        <div><a href="../../">Home</a></div>
-        <div><a href="../../payments/">Payments</a></div>
-        <div id="gallery">
-          <a class="active" href="../../gallery/">Resources</a>
-          <div id="gal-list">
-            <!-- <a href="../gallery/project1/">Learn about Educational Therapy
-            </a> -->
-            <a href="../project2/">Books</a>
-            <a href="../project3/">Websites</a>
-          </div>
+
+              <!--Navigation Bar-->
+    <!-- <img src="./img/site-logo.png"/> -->
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="../../">Marcie Habell</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a class="active" href="../">Home</a></li>
+            <li><a href="../../payments/">Payments</a></li>
+            <li>
+              <a href="../../gallery/" class="desktop-item">Resources</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Resources</label>
+              <ul class="drop-menu">
+                <li><a href="../project2/">Books</a></li>
+                <li><a href="../project3/">websites</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li><a href="../../bio/">About</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <div><a href="../../bio/">About</a></div>
+      </nav>
+
+      <div class="content">
+        <h1>Recomended Books</h1>        
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="../../../../img/books/How-to-Talk-so-Kids-Will-Listen-and-Listen-so-Kids-Will-Talk.png" alt="How to Talk so Kids Will Listen and Listen so Kids Will Talk" class="aligncenter img-responsive" />
+            <span>How to Talk so Kids Will Listen and Listen so Kids Will Talk</span>
+        </div>
+        <div class="box">
+            <img src="../../img/books/Smart-but-Scattered.png" alt="Smart But Scattered: The Revolutionary Executive Skills Approach To Helping Kids Reach Their Potential" class="aligncenter img-responsive" />
+          <span>Smart But Scattered: The Revolutionary "Executive Skills" Approach To Helping Kids Reach Their Potential</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+          <img src="https://source.unsplash.com/1000x804">
+          <span>Hover</span>
+        </div>
+        <div class="box">
+            <img src="../../img/books/Smart-but-Scattered.png" alt="Smart But Scattered: The Revolutionary Executive Skills Approach To Helping Kids Reach Their Potential" class="aligncenter img-responsive" />
+            <span>Effect</span>
+        </div>
       </div>
-
-      <!-- <div class="content">
-        <h1>Recomended Books</h1>
-        <div class="proj"><img src="../../img/project2.png" alt="Project 2 Placeholder"></div>
-        <h2>
-            Overview
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim diam vulputate ut pharetra. Tristique senectus et netus et malesuada. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Nec dui nunc mattis enim. Morbi tincidunt ornare massa eget. In hac habitasse platea dictumst quisque sagittis purus sit. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Urna duis convallis convallis tellus. Nisl purus in mollis nunc sed. Aliquam faucibus purus in massa tempor. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Eget mi proin sed libero enim.
-        </p>
-        
-    </div> -->
-
+    </div>
 
     <div class="content"><!-- starts content --> 
     
@@ -70,8 +93,7 @@
                           <div class="k-team-social text-center">
                               <a class="btn btn-default" href="http://amzn.com/1451663889" role="button" target="_blank">More Info</a>
                           </div>
-                      </div>
-                      
+                      </div>      
                   </div>
 
                   <div class="col-lg-3 col-md-3 col-sm-6 mq-box"><!-- Book 2 -->
@@ -390,12 +412,10 @@
                   </div>
               </div><!-- ends row -->
 
-              
-
-
   </div><!-- ends container -->
 
-</div><!-- ends content -->
+</div>  <!-- ends content -->
+
 
 
      <!--Footer Section-->

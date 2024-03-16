@@ -15,39 +15,40 @@
   </head>
   <body>
    
-    <!--Navigation Bar-->
-    <div class="topnav">
-
-      <!-- <a class="logo" href="./"><img src="./img/site-logo.png"/></a> -->
-
-      <div><a href="../../">Home</a></div>
-      <div><a href="../../payments/">Payments</a></div>
-      <div id="gallery">
-        <a class="active" href="../../gallery/">Resources</a>
-        <div id="gal-list">
-          <!-- <a href="../gallery/project1/">Learn about Educational Therapy
-          </a> -->
-          <a href="../project2/">Books</a>
-          <a href="../project3/">Websites</a>
+                 <!--Navigation Bar-->
+    <!-- <img src="./img/site-logo.png"/> -->
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="../../">Marcie Habell</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a class="active" href="../">Home</a></li>
+            <li><a href="../../payments/">Payments</a></li>
+            <li>
+              <a href="../../gallery/" class="desktop-item">Resources</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Resources</label>
+              <ul class="drop-menu">
+                <li><a href="../project2/">Books</a></li>
+                <li><a href="../project3/">websites</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li><a href="../../bio/">About</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-      </div>
-      <div><a href="../../bio/">About</a></div>
-    </div>
+      </nav>
 
-    <!-- <div class="content">
-      <h1>Recomended Websites</h1>
-      <div class="proj"><img src="../../img/project2.png" alt="Project 2 Placeholder"></div>
-      <h2>
-          Overview
-      </h2>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec enim diam vulputate ut pharetra. Tristique senectus et netus et malesuada. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Nec dui nunc mattis enim. Morbi tincidunt ornare massa eget. In hac habitasse platea dictumst quisque sagittis purus sit. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Urna duis convallis convallis tellus. Nisl purus in mollis nunc sed. Aliquam faucibus purus in massa tempor. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Eget mi proin sed libero enim.
-      </p>
-      
-  </div> -->
+    <div class="content">
+      <h1>Recomended Websites</h1>      
+  </div>
 
 
-<div class="section"
+<div class="section">
 
 <section id="k-work-ajax"><!-- starts single work project preview -->
         <div class="container section-space20"><!-- starts container -->
@@ -224,10 +225,6 @@
 </div>
 
 </section>
-
-
-
-
   
    <!--Footer Section-->
    <footer class="footer">
