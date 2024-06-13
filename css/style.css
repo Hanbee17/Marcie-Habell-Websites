@@ -29,6 +29,12 @@ h4 {
   font-size: large;
 }
 
+h5 {
+  color: #f3f5f7;
+  font-size: 100pt;
+  text-align: center;
+}
+
 
 p {
   color: #232c33;
